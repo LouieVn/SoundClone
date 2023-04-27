@@ -1,21 +1,21 @@
 .main__wrapper{
     padding-bottom: 20px;
     border-bottom: 1px solid #cccccc;
-    margin-left: 20px;
 }
 .wrapper-list{
     /* width: 826px;     */
-    max-width: 624px;
+    max-width: 602px;
 }
 .main__gallery-container{
     padding: 20px 0 20px 20px;
     display: flex;
+    align-items: center;
     background: linear-gradient(to right, #b92b27, #1565c0);
 }
 .main__module{
     display: flex;
     /* width: 826px; */
-    max-width: 624px;
+    max-width: 602px;
     overflow-x: hidden;
     padding-bottom: 10px;
 }
@@ -26,7 +26,7 @@
 .module-list{
     display: flex;
     /* width: 826px; */
-    max-width: 624px;
+    max-width: 602px;
     flex-direction: column;
     padding-left: 20px;
     height: 172px;
@@ -120,13 +120,27 @@
     .main__playlist-header h3{
         font-weight: 700;
     }
-    .module-list{
-        width: 100%;
-    }
     .main__gallery-details{
         width: 100%;
     }
     .main__gallery-action{
         display: none;
+    }
+    .wrapper-list{
+        max-width: 400px;
+    }
+    .main__module{
+        max-width: 400px;
+    }
+    .module-list{
+        max-width: 400px; 
+        height: 120px;     
+    }
+    .module-list li{
+        font-size: 11px;  
+    }
+    .main__disk{
+        height: 100px;
+        width: 100px;
     }
 }
