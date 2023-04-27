@@ -1,0 +1,172 @@
+.sidebar__module{
+    padding-bottom: 30px;
+    min-width: 300px;
+}
+.sidebar__module-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.sidebar__header-title{
+
+}
+.siderbar__title{
+    color: #999999;
+}
+.sidebar__header-action{
+    
+}
+.sidebar__action{
+    color: #999999;
+}
+.sidebar__module-header:hover .sidebar__action{
+    color: #333333;
+}
+.sidebar__module-content{
+    padding: 15px 0;
+}
+.sidebar__content-suggestNav{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar__content-suggestNav li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.sidebar__content-suggestNav-list li{
+    display: flex;
+    padding: 10px 0; 
+}
+.sidebar__suggestNav-avatar{
+    
+}
+.sidebar__avatar-round{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.sidebar__avatar-round .sidebar__avatar{
+    border-radius: 50%;
+}
+.sidebar__avatar{
+    height: 100%;
+    width: 100%;
+}
+.sidebar__suggestNav-title{
+    flex: 6;
+    padding-left: 12px;
+    padding-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sidebar__suggestNav-title-list{
+    padding-left: 12px;
+    padding-bottom: 4px;
+    flex: 7;
+}
+.sidebar__title-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar__title-song{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar__song-disk{
+    color: #333333;
+}
+.sidebar__title-stats{
+
+}
+.sidebar__stats-items:hover{
+    color: #333333;
+}
+.sidebar__stats-items{
+    color: #999999;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 0 4px;
+}
+.sidebar__suggestNav-action{
+    flex: 3;
+    display: flex;
+    align-items:last baseline;
+    justify-content: center;
+
+}
+.siderbar__action{
+    margin: 0 4px;
+}
+.sidebar__avatar-square{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.sidebar__song-artist{
+
+}
+.sidebar__footer{
+    padding-top: 20px;
+    border-top: 1px solid #cccccc;
+}
+.sidebar__footer-items{
+    color: #999999;
+}
+.sidebar__footer-items:hover{
+    color: #333333;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .sidebar__module{
+        border-bottom: 1px solid #cccccc;
+    }
+    .sidebar__module-header{
+        border: none;
+        margin-top: 10px;
+    }
+    .siderbar__title{
+        font-weight: 500;
+    }
+    .sidebar__module-content{
+        margin: 0;
+        padding: 0;
+    }
+    .sidebar__suggestNav-title{
+        flex-direction: row;
+        align-items: center;
+    }
+    .sidebar__suggestNav-action{
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .sidebar__title-song{
+        flex: 2;
+    }
+    .sidebar__title-stats{
+        flex: 8;
+    }
+    .sidebar__footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar__footer-items{
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width: 767px){
+    .sidebar__module{
+        display: none;
+    }
+    .sidebar__footer{
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar__footer-items{
+        padding: 10px 0;
+    }
+}

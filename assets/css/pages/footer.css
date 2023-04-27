@@ -1,0 +1,151 @@
+.footer__wrapper{
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__left{
+    display: flex;
+    align-items: center;
+}
+.footer__left-displayNav{
+    display: flex;
+}
+.footer__left-displayNav li{
+    padding: 12px;
+}
+.footer__displayNav-items{
+    color: #333333;
+}
+.footer__middle{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.footer__middle-time{
+    flex: 9;
+    display: flex;
+    align-items: center;
+}
+.footer__time-timeStart{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.footer__time-timeRange{
+    flex: 8;
+    display: flex;
+    align-items: center;
+}
+.footer__timeRange{
+    width: 100%;
+    cursor: pointer;
+}
+.footer__time-timeEnd{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.footer__middle-volume{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.footer__volume{
+    color: #333333;
+}
+.footer__right{
+    display: flex;
+    align-items: center;
+}
+.footer__right-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__details-image{
+    display: flex;
+    align-items: center;
+}
+.footer__image{
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+}
+.footer__details-name{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 12px;
+}
+.footer__details-name:hover a{
+    cursor: pointer;
+    color: #000000;
+}
+.footer__name-artist{
+    font-weight: 300;
+    font-size: 12px;
+    color: #999999;
+}
+.footer__name-song{
+    font-weight: 300;
+    font-size: 14px;
+    color: #333333;
+}
+.footer__right-songNav{
+    color: #333333;
+}
+.footer__songNav{
+    display: flex;
+}
+.footer__songNav li{
+    padding: 12px;
+}
+.footer__songNav-items{
+    color: #333333;
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    .footer__wrapper{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer__details-name{
+        display: none;
+    }
+    .footer__middle{
+        flex: 0.8;
+    }
+    .footer__time-timeStart{
+        display: none;
+    }
+    .footer__time-timeEnd{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .footer__time-timeStart{
+        display: none;
+    }
+    .footer__time-timeEnd{
+        display: none;
+    }
+    .footer__middle-volume{
+        display: none;
+    }
+    .footer__songNav li:last-child{
+        display: none;
+    }
+    .footer__right-details{
+        display: none;
+    }
+    .mobile-off{
+        display: none;
+    }
+    .footer__wrapper{
+        justify-content:center;
+    }
+    .footer__middle{
+        flex: 1;
+    }
+}

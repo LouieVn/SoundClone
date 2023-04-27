@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayerClone</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/pages/article.css">
+    <link rel="stylesheet" href="./assets/css/pages/footer.css">
+    <link rel="stylesheet" href="./assets/css/pages/header.css">
+    <link rel="stylesheet" href="./assets/css/pages/playlist.css">
+    <link rel="stylesheet" href="./assets/css/elements/button.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__left">
+                <div class="header__left-logo mobile-off">
+                    <i class="fa-brands fa-soundcloud"></i>
+                </div>
+                <nav class="header__left-navbar">
+                    <ul class="header__navbar">
+                        <li>
+                            <a href="" class="header__navbar-items">
+                                <span class="mobile-off">Home</span>
+                                <span class="mobile tablet-off"><i class="fa-solid fa-house"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="header__navbar-items">
+                                <span class="mobile-off">Feed</span>
+                                <span class="mobile tablet-off"><i class="fa-solid fa-newspaper"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="header__navbar-items">
+                                <span class="mobile-off">Library</span>
+                                <span class="mobile tablet-off"><i class="fa-solid fa-book"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__middle">
+                <div class="header__middle-search">
+                    <form action="" class="header__search">
+                        <input type="search" placeholder="Search" class="header__search-input">
+                        <button class="header__search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="header__right">
+                <ul class="header__right-userNav">
+                    <li>
+                        <a href="" class="header__userNav-items">
+                            <span class="tablet-off mobile-off">Try next pro</span>
+                            <span class="tablet mobile-off">Upgrade</span>
+                            <span class="mobile tablet-off"><i class="fa-solid fa-up-right-from-square"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="header__userNav-items">
+                            <span class="tablet-off mobile-off">Upload</span>
+                            <span class="tablet mobile"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="header__userNav-items">
+                            <span class="tablet mobile"><i class="fa-solid fa-circle-user"></i></span>
+                            <span class="tablet-off mobile-off">Quoc Viet</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__right-menuNav mobile-off">
+                    <li>
+                        <a href="" class="header__menuNav-items">
+                            <i class="fa-solid fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="header__menuNav-items">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="header__menuNav-items">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container__wrapper">
+            <div class="main">
+                <div class="main__wrapper">
+                    <div class="main__playlist-header">
+                        <h3>More of what you want</h3>
+                    </div>
+                    <ul class="main__module">
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main__wrapper wrapper-list">
+                    <div class="main__playlist-header">
+                        <h3>Mix for you</h3>
+                    </div>
+                    <div class="main__gallery-container">
+                        <div class="main__gallery-disk">
+                            <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                        </div>
+                        <ul class="module-list">
+                            <li>
+                                <div class="main__gallery-details">
+                                    LOPE PHAM — FACETIME CALL - LOPE PHAM, HAI SAM
+                                </div>
+                                <div class="main__gallery-action">
+                                    <i class="fa fa-play"></i>
+                                    435k
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__gallery-details">
+                                    LOPE PHAM — FACETIME CALL - LOPE PHAM, HAI SAM
+                                </div>
+                                <div class="main__gallery-action">
+                                    <i class="fa fa-play"></i>
+                                    435k
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__gallery-details">
+                                    LOPE PHAM — FACETIME CALL - LOPE PHAM, HAI SAM
+                                </div>
+                                <div class="main__gallery-action">
+                                    <i class="fa fa-play"></i>
+                                    435k
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__gallery-details">
+                                    LOPE PHAM — FACETIME CALL - LOPE PHAM, HAI SAM
+                                </div>
+                                <div class="main__gallery-action">
+                                    <i class="fa fa-play"></i>
+                                    435k
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__gallery-details">
+                                    LOPE PHAM — FACETIME CALL - LOPE PHAM, HAI SAM
+                                </div>
+                                <div class="main__gallery-action">
+                                    <i class="fa fa-play"></i>
+                                    435k
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__gallery-details">
+                                    LOPE PHAM — FACETIME CALL - LOPE PHAM, HAI SAM
+                                </div>
+                                <div class="main__gallery-action">
+                                    <i class="fa fa-play"></i>
+                                    435k
+                                </div>
+                            </li>
+                            <li>
+                                <div class="main__gallery-details">
+                                    LOPE PHAM — FACETIME CALL - LOPE PHAM, HAI SAM
+                                </div>
+                                <div class="main__gallery-action">
+                                    <i class="fa fa-play"></i>
+                                    435k
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main__wrapper">
+                    <div class="main__playlist-header">
+                        <h3>More of what you want</h3>
+                    </div>
+                    <ul class="main__module">
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__module-playlist">
+                            <div class="main__playlist-gallery">
+                                <div class="main__playlist-disk">
+                                    <img src="./assets/img/hieuthuhai.jpg" alt="" class="main__disk">
+                                </div>
+                                <div class="main__gallery-details">
+                                    <a href="" class="main__details-song">
+                                        Lan man
+                                    </a>
+                                    <a href="" class="main__details-singer">
+                                        Ronboogz
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar">
+                <article class="sidebar__module">
+                    <div class="sidebar__module-header">
+                        <div class="sidebar__header-title">
+                            <a href="" class="siderbar__title">
+                                <i class="fa-solid fa-users"></i>
+                                Artists you should follow
+                            </a>
+                        </div>
+                        <div class="sidebar__header-action">
+                            <a href="" class="sidebar__action">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                Refresh list
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar__module-content">
+                        <ul class="sidebar__content-suggestNav">
+                            <li>
+                                <div class="sidebar__suggestNav-avatar">
+                                    <div class="sidebar__avatar-round">
+                                        <img src="./assets/img/hieuthuhai.jpg" alt="" class="sidebar__avatar">
+                                    </div>
+                                </div>
+                                <div class="sidebar__suggestNav-title">
+                                    <div class="sidebar__title-song">
+                                        <a href="" class="sidebar__song-disk">
+                                            Dreamble
+                                        </a>
+                                    </div>
+                                    <div class="sidebar__title-stats">
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-users"></i>
+                                            2,203
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-guitar"></i>
+                                            13
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar__suggestNav-action">
+                                    <button class="siderbar__action">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                        Follow
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar__suggestNav-avatar">
+                                    <div class="sidebar__avatar-round">
+                                        <img src="./assets/img/hieuthuhai.jpg" alt="" class="sidebar__avatar">
+                                    </div>
+                                </div>
+                                <div class="sidebar__suggestNav-title">
+                                    <div class="sidebar__title-song">
+                                        <a href="" class="sidebar__song-disk">
+                                            Dreamble
+                                        </a>
+                                    </div>
+                                    <div class="sidebar__title-stats">
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-users"></i>
+                                            2,203
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-guitar"></i>
+                                            13
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar__suggestNav-action">
+                                    <button class="siderbar__action">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                        Follow
+                                    </button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar__suggestNav-avatar">
+                                    <div class="sidebar__avatar-round">
+                                        <img src="./assets/img/hieuthuhai.jpg" alt="" class="sidebar__avatar">
+                                    </div>
+                                </div>
+                                <div class="sidebar__suggestNav-title">
+                                    <div class="sidebar__title-song">
+                                        <a href="" class="sidebar__song-disk">
+                                            Dreamble
+                                        </a>
+                                    </div>
+                                    <div class="sidebar__title-stats">
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-users"></i>
+                                            2,203
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-guitar"></i>
+                                            13
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="sidebar__suggestNav-action">
+                                    <button class="siderbar__action">
+                                        <i class="fa-solid fa-user-plus"></i>
+                                        Follow
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="sidebar__module">
+                    <div class="sidebar__module-header">
+                        <div class="sidebar__header-title">
+                            <a href="" class="siderbar__title">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                Listen history
+                            </a>
+                        </div>
+                        <div class="sidebar__header-action">
+                            <a href="" class="sidebar__action">
+                                View all
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar__module-content">
+                        <ul class="sidebar__content-suggestNav-list">
+                            <li>
+                                <div class="sidebar__suggestNav-avatar">
+                                    <div class="sidebar__avatar-square">
+                                        <img src="./assets/img/hieuthuhai.jpg" alt="" class="sidebar__avatar">
+                                    </div>
+                                </div>
+                                <div class="sidebar__suggestNav-title-list">
+                                    <div class="sidebar__title-wrapper">
+                                        <div class="sidebar__title-song">
+                                            <a href="" class="sidebar__song-artist">
+                                                MCK
+                                            </a>
+                                            <a href="" class="sidebar__song-disk">
+                                                Tưởng tượng
+                                            </a>
+                                        </div>
+                                        <div class="sidebar__suggestNav-action">
+                                            <button class="siderbar__action">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                            <button class="siderbar__action">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__title-stats">
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-play"></i>
+                                            2,203
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-heart"></i>
+                                            13
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-rotate-left"></i>
+                                            13
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-comment"></i>
+                                            13
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar__suggestNav-avatar">
+                                    <div class="sidebar__avatar-square">
+                                        <img src="./assets/img/hieuthuhai.jpg" alt="" class="sidebar__avatar">
+                                    </div>
+                                </div>
+                                <div class="sidebar__suggestNav-title-list">
+                                    <div class="sidebar__title-wrapper">
+                                        <div class="sidebar__title-song">
+                                            <a href="" class="sidebar__song-artist">
+                                                MCK
+                                            </a>
+                                            <a href="" class="sidebar__song-disk">
+                                                Tưởng tượng
+                                            </a>
+                                        </div>
+                                        <div class="sidebar__suggestNav-action">
+                                            <button class="siderbar__action">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                            <button class="siderbar__action">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__title-stats">
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-play"></i>
+                                            2,203
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-heart"></i>
+                                            13
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-rotate-left"></i>
+                                            13
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-comment"></i>
+                                            13
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sidebar__suggestNav-avatar">
+                                    <div class="sidebar__avatar-square">
+                                        <img src="./assets/img/hieuthuhai.jpg" alt="" class="sidebar__avatar">
+                                    </div>
+                                </div>
+                                <div class="sidebar__suggestNav-title-list">
+                                    <div class="sidebar__title-wrapper">
+                                        <div class="sidebar__title-song">
+                                            <a href="" class="sidebar__song-artist">
+                                                MCK
+                                            </a>
+                                            <a href="" class="sidebar__song-disk">
+                                                Tưởng tượng
+                                            </a>
+                                        </div>
+                                        <div class="sidebar__suggestNav-action">
+                                            <button class="siderbar__action">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                            <button class="siderbar__action">
+                                                <i class="fa-solid fa-ellipsis"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="sidebar__title-stats">
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-play"></i>
+                                            2,203
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-heart"></i>
+                                            13
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-rotate-left"></i>
+                                            13
+                                        </a>
+                                        <a class="sidebar__stats-items">
+                                            <i class="fa-solid fa-comment"></i>
+                                            13
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="sidebar__footer">
+                    <a href="" class="sidebar__footer-items">Legal</a>
+                    <a href="" class="sidebar__footer-items">Privacy</a>
+                    <a href="" class="sidebar__footer-items">Cookie</a>
+                    <a href="" class="sidebar__footer-items">Language</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <ul class="footer__left-displayNav">
+                    <li class="mobile-off">
+                        <a href="" class="footer__displayNav-items">
+                            <i class="fa-sharp fa-solid fa-left-long "></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__displayNav-items">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </li>
+                    <li class="mobile-off">
+                        <a href="" class="footer__displayNav-items">
+                            <i class="fa-solid fa-right-long"></i>
+                        </a>
+                    </li>
+                    <li class="mobile-off">
+                        <a href="" class="footer__displayNav-items">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </a>
+                    </li>
+                    <li class="mobile-off">
+                        <a href="" class="footer__displayNav-items">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__middle-time">
+                    <span class="footer__time-timeStart">
+                        0:00
+                    </span>
+                    <div class="footer__time-timeRange">
+                        <input type="range" class="footer__timeRange">
+                    </div>
+                    <span class="footer__time-timeEnd">
+                        3:41
+                    </span>
+                </div>
+                <div class="footer__middle-volume">
+                    <a href="" class="footer__volume">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__right-details">
+                    <div class="footer__details-image">
+                        <img src="./assets/img/hieuthuhai.jpg" alt="" class="footer__image">
+                    </div>
+                    <div class="footer__details-name">
+                        <a href="" class="footer__name-artist">
+                            Hieuthuhai
+                        </a>
+                        <a href="" class="footer__name-song">
+                            Ngủ Một Mình
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__right-songNav">
+                    <ul class="footer__songNav">
+                        <li>
+                            <a href="" class="footer__songNav-items">
+                                <i class="fa-solid fa-heart"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__songNav-items">
+                                <i class="fa-solid fa-user-check"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="footer__songNav-items">
+                                <i class="fa-solid fa-list-ul"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>

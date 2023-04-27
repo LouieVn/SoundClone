@@ -1,0 +1,131 @@
+.main__wrapper{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+.wrapper-list{
+    /* width: 826px;     */
+    max-width: 624px;
+}
+.main__gallery-container{
+    padding: 20px 0 20px 20px;
+    display: flex;
+    background: linear-gradient(to right, #b92b27, #1565c0);
+}
+.main__module{
+    display: flex;
+    /* width: 826px; */
+    max-width: 624px;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+}
+.main__module:hover{
+    overflow-x: scroll;
+    padding-bottom: 0px;
+}
+.module-list{
+    display: flex;
+    /* width: 826px; */
+    max-width: 624px;
+    flex-direction: column;
+    padding-left: 20px;
+    height: 172px;
+    overflow-y: hidden;
+    padding-right: 10px;
+}
+.module-list:hover{
+    overflow-y: scroll;
+    padding-right: 0px;
+}
+.module-list li{
+    min-height: 40px;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 100;
+    color: #ffffff;
+}
+.main__module-playlist{
+
+}
+.main__playlist-header{
+    padding: 12px 0;
+}
+.main__playlist-header h3{
+    font-weight: 300;
+    font-size: 24px;
+}
+.main__playlist-gallery{
+    padding-right: 12px;
+}
+.main__playlist-disk{
+    
+}
+.main__disk{
+    height: 172px;
+    width: 172px;
+    cursor: pointer;
+}
+.main__gallery-details{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    margin-right: 10px;
+}
+.main__details-song{
+    color: #999999;
+}
+.main__details-singer{
+    color: #333333;
+}
+.main__module-list{
+
+}
+.main__gallery-disk{
+
+}
+.main__gallery-action{
+    padding-top: 8px;
+    margin-right: 10px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px){
+    .main__playlist-header h3{
+        font-weight: 500;
+    }
+}
+@media screen and (max-width: 767px){
+    .main__playlist-header h3{
+        font-weight: 700;
+    }
+    .module-list{
+        width: 100%;
+    }
+    .main__gallery-details{
+        width: 100%;
+    }
+    .main__gallery-action{
+        display: none;
+    }
+}
