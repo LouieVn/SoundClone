@@ -90,24 +90,18 @@
     padding-top: 8px;
     margin-right: 10px;
 }
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     border: none;
   }
-  
-  /* Track */
   ::-webkit-scrollbar-track {
     background: transparent;
   }
-  
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
   }
-  
-  /* Handle on hover */
+
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
