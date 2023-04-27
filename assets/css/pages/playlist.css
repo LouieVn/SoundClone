@@ -1,6 +1,7 @@
 .main__wrapper{
     padding-bottom: 20px;
     border-bottom: 1px solid #cccccc;
+    margin-left: 20px;
 }
 .wrapper-list{
     /* width: 826px;     */
