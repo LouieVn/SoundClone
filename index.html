@@ -650,43 +650,30 @@
             <div class="footer__left">
                 <ul class="footer__left-displayNav">
                     <li class="mobile-off">
-                        <a href="" class="footer__displayNav-items">
-                            <i class="fa-sharp fa-solid fa-left-long "></i>
-                        </a>
+                        <i class="fa-sharp fa-solid fa-left-long play-back"></i>
                     </li>
-                    <li>
-                        <a href="" class="footer__displayNav-items">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
+                    <li class="play-inner">
+                        <i class="fa-solid fa-play play-icon"></i>
                     </li>
-                    <li class="mobile-off">
-                        <a href="" class="footer__displayNav-items">
-                            <i class="fa-solid fa-right-long"></i>
-                        </a>
+                    <li class="mobile-off ">
+                        <i class="fa-solid fa-right-long play-forward"></i>
                     </li>
                     <li class="mobile-off">
-                        <a href="" class="footer__displayNav-items">
-                            <i class="fa-solid fa-shuffle"></i>
-                        </a>
+                        <i class="fa-solid fa-shuffle"></i>
                     </li>
                     <li class="mobile-off">
-                        <a href="" class="footer__displayNav-items">
-                            <i class="fa-solid fa-rotate-left"></i>
-                        </a>
+                        <i class="fa-solid fa-rotate-left"></i>
                     </li>
                 </ul>
             </div>
             <div class="footer__middle">
                 <div class="footer__middle-time">
-                    <span class="footer__time-timeStart">
-                        0:00
-                    </span>
+                    <div class="footer__time-timeEnd timeend"></div>
                     <div class="footer__time-timeRange">
-                        <input type="range" class="footer__timeRange">
+                        <input type="range" class="footer__timeRange range">
+                        <audio id="song" src="./assets/mp3/YeuNguoiCoUocMo.mp3"></audio>
                     </div>
-                    <span class="footer__time-timeEnd">
-                        3:41
-                    </span>
+                    <div class="footer__time-timeStart timestart"></div>
                 </div>
                 <div class="footer__middle-volume">
                     <a href="" class="footer__volume">
@@ -731,6 +718,7 @@
         </div>
     </footer>
     </div>
+    <script src="./assets/js/play.js"></script>
 </body>
 
 </html>
