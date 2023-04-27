@@ -18,8 +18,8 @@ prevBtn.addEventListener("click", function () {
 nextBtn.addEventListener("click", function () {
     changeSong(1);
 });
-song.addEventListener("ended",handleEndedSong);
-function handleEndedSong(){
+song.addEventListener("ended", handleEndedSong);
+function handleEndedSong() {
     changeSong(1);
 }
 function changeSong(dir) {
@@ -58,9 +58,9 @@ function playPause() {
 
 function displayTimer() {
     const { duration, currentTime } = song;
-    rangeBar.max=duration;
-    rangeBar.value=currentTime;
-    timeEnd.textContent=formatTimer(currentTime);
+    rangeBar.max = duration;
+    rangeBar.value = currentTime;
+    timeEnd.textContent = formatTimer(currentTime);
     if (!duration) {
         timeStart.textContent = "00:00";
     }
@@ -71,9 +71,9 @@ function displayTimer() {
 function formatTimer(number) {
     const min = Math.floor(number / 60);
     const sec = Math.floor(number - min * 60);
-    return `${min<10?'0'+min:min}:${sec<10?'0'+sec:sec}`;
+    return `${min < 10 ? '0' + min : min}:${sec < 10 ? '0' + sec : sec}`;
 }
-rangeBar.addEventListener("change",handleChangeBar);
-function handleChangeBar(){
-    song.currentTime=rangeBar.value;
+rangeBar.addEventListener("change", handleChangeBar);
+function handleChangeBar() {
+    song.currentTime = rangeBar.value;
 }
