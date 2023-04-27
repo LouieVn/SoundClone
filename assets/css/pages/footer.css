@@ -105,6 +105,9 @@
 .footer__songNav-items{
     color: #333333;
 }
+.footer__left-displayNav li i{
+    cursor: pointer;
+}
 @media screen and (min-width: 767px) and (max-width: 1023px){
     .footer__wrapper{
         width: 100%;
