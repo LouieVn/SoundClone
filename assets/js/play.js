@@ -2,6 +2,7 @@ const song = document.getElementById("song");
 const playBtn = document.querySelector(".play-inner");
 const prevBtn = document.querySelector(".play-back");
 const nextBtn = document.querySelector(".play-forward");
+const randomBtn = document.querySelector(".play-random");
 const timeStart = document.querySelector(".timestart");
 const timeEnd = document.querySelector(".timeend");
 const rangeBar = document.querySelector(".range");
@@ -9,7 +10,7 @@ let isPlaying = true;
 let indexSong = 0;
 displayTimer();
 let timer;
-const musics = ["LaAnh.mp3", "NeuLucDo.mp3", "YeuNguoiCoUocMo.mp3"];
+const musics = [];
 song.setAttribute("src", `./assets/mp3/${musics[indexSong]}`);
 
 prevBtn.addEventListener("click", function () {
@@ -54,6 +55,13 @@ function playPause() {
         playBtn.innerHTML = `<i class="fa-solid fa-play"></i>`
         isPlaying = true;
     }
+}
+
+randomBtn.addEventListener("click", playRandom);
+function playRandom() {
+    let randomIndex = (Math.floor(Math.random() * 101)) % (musics.length - 1);
+    song.setAttribute("src", `./assets/mp3/${musics[randomIndex]}`);
+    playPause();
 }
 
 function displayTimer() {

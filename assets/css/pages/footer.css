@@ -13,6 +13,7 @@
 }
 .footer__left-displayNav li{
     padding: 12px;
+    cursor: pointer;
 }
 .footer__displayNav-items{
     color: #333333;
