@@ -3,6 +3,7 @@ const playBtn = document.querySelector(".play-inner");
 const prevBtn = document.querySelector(".play-back");
 const nextBtn = document.querySelector(".play-forward");
 const randomBtn = document.querySelector(".play-random");
+const replayBtn = document.querySelector(".replay");
 const timeStart = document.querySelector(".timestart");
 const timeEnd = document.querySelector(".timeend");
 const rangeBar = document.querySelector(".range");
@@ -10,7 +11,9 @@ let isPlaying = true;
 let indexSong = 0;
 displayTimer();
 let timer;
-const musics = [];
+const musics =["11-11.mp3","Bật tình yêu lên.mp3","Chuyện đôi ta.mp3","Cô gái này là của ai.mp3","Em là.mp3",
+"Ghệ iu dấu của em","Gió.mp3","Hãy trao cho anh.mp3","LaAnh.mp3","NeuLucDo.mp3","Rồi ta sẽ ngắm pháo hoa cùng nhau.mp3",
+"Vài câu nói khiến người thay đổi.mp3","Waiting foryou.mp3","YeuNguoiCoUocMo.mp3"];
 song.setAttribute("src", `./assets/mp3/${musics[indexSong]}`);
 
 prevBtn.addEventListener("click", function () {
