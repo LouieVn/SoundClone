@@ -36,14 +36,13 @@ a{
 .container__wrapper{
     background-color: #ffffff;
     display: flex;
-    padding-top: 20px;
 }
 .main{
     padding: 0 30px;
     border-right: 1px solid #cccccc;
 }
 .sidebar{
-    padding: 12px 30px;
+    padding: 12px 30px 0 30px;
 }
 .footer{
     background-color: #eeeeee;

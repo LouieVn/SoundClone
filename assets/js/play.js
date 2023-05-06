@@ -7,6 +7,7 @@ const replayBtn = document.querySelector(".replay");
 const timeStart = document.querySelector(".timestart");
 const timeEnd = document.querySelector(".timeend");
 const rangeBar = document.querySelector(".range");
+const rangeVol =document.querySelector(".rangevol");
 let isPlaying = true;
 let indexSong = 0;
 displayTimer();
@@ -88,3 +89,7 @@ rangeBar.addEventListener("change", handleChangeBar);
 function handleChangeBar() {
     song.currentTime = rangeBar.value;
 }
+// rangeVol.addEventListener("click",handleChangeVol);
+// function handleChangeVol() {
+//     song.volume = rangeVol.value;
+// }
