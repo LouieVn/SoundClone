@@ -250,7 +250,7 @@ function playPause() {
         song.play();
         playBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`
         isPlaying = false;
-        setInterval(displayTimer, 500)
+        setInterval(displayTimer, 1)
     }
     else {
         song.pause();
