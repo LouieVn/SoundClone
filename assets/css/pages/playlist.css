@@ -26,6 +26,7 @@
 .module-list{
     display: flex;
     /* width: 826px; */
+    width: 100%;
     max-width: 602px;
     flex-direction: column;
     padding-left: 20px;
