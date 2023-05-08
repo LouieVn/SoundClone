@@ -139,16 +139,18 @@
     .sidebar__suggestNav-title{
         flex-direction: row;
         align-items: center;
+        flex: 5;
     }
     .sidebar__suggestNav-action{
         align-items: center;
         justify-content: flex-end;
+        flex: 1;
     }
     .sidebar__title-song{
-        flex: 2;
+        flex: 3;
     }
     .sidebar__title-stats{
-        flex: 8;
+        flex: 1;
     }
     .sidebar__footer{
         display: flex;
