@@ -125,19 +125,8 @@ const musics = [
     }
 ]
 
-function shuffle(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-    return array;
-}
-
 const mainModule = document.querySelector(".main__module");
 const htmls = musics.map(function (music) {
-    // shuffle(musics);
     return `
         <li class="main__module-playlist">
             <div class="main__playlist-gallery">
@@ -189,7 +178,7 @@ const htmlv = musics.map(function (music) {
             <div class="sidebar__suggestNav-title">
                 <div class="sidebar__title-song">
                                     <a href="" class="sidebar__song-disk">
-                                        ${music.title}
+                                        ${music.artist}
                                     </a>
                                 </div>
                             <div class="sidebar__title-stats">
@@ -269,6 +258,10 @@ function playPause() {
         isPlaying = true;
     }
 }
+function play(){
+    isPlaying = true;
+    playPause();
+}
 
 randomBtn.addEventListener("click", playRandom);
 function playRandom() {
@@ -277,7 +270,7 @@ function playRandom() {
     musicImage.setAttribute("src", musics[randomIndex].image);
     musicName.textContent = musics[randomIndex].title;
     musicArtist.textContent = musics[randomIndex].artist;
-    playPause();
+    play();
 }
 
 replayBtn.addEventListener("click", playRepeat);
@@ -310,14 +303,10 @@ function handleChangeBar() {
     song.currentTime = rangeBar.value;
 }
 function init() {
-    displayTimer;
     song.setAttribute("src", `./assets/mp3/${musics[indexSong].file}`);
     musicImage.setAttribute("src", musics[indexSong].image);
     musicName.textContent = musics[indexSong].title;
     musicArtist.textContent = musics[indexSong].artist;
 }
 init();
-// rangeVol.addEventListener("click",handleChangeVol);
-// function handleChangeVol() {
-//     song.volume = rangeVol.value;
-// }
+displayTimer();
